@@ -1,0 +1,125 @@
+.insta-section {
+  position: relative;
+  width: 100%;
+  padding: 100px;
+  margin: 0;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.insta-container {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 10;
+}
+
+.insta-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.insta-title {
+  font-family: "Clash Display", sans-serif;
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--text-dark);
+  margin: 0;
+}
+
+.insta-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 32px;
+  border: 1px solid var(--text-dark);
+  border-radius: 50px;
+  text-decoration: none;
+  color: var(--text-dark);
+  font-family: "Clash Display", sans-serif;
+  font-weight: 500;
+  font-size: 2rem;
+  background: transparent;
+  transition: all 0.3s ease;
+}
+
+.insta-btn:hover {
+  background-color: var(--text-dark);
+  color: white;
+}
+
+.insta-btn:hover .arrow-icon {
+  stroke: white;
+}
+
+.arrow-icon {
+  width: 30px;
+  height: 30px;
+  fill: none;
+  stroke: var(--text-dark);
+  stroke-width: 2;
+  transition: stroke 0.3s ease;
+}
+
+.insta-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.insta-img-wrapper {
+  position: relative;
+  overflow: hidden;
+  aspect-ratio: 9/16;
+  border-radius: 8px;
+}
+
+.insta-img-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+  display: block;
+}
+
+.insta-img-wrapper:hover img {
+  transform: scale(1.05);
+}
+
+@media (max-width: 1024px) {
+  .insta-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .insta-title {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .insta-section {
+    padding: 60px 20px;
+  }
+
+  .insta-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+
+  .insta-title {
+    font-size: 2rem;
+  }
+  .insta-btn {
+    font-size: 1.2rem;
+    padding: 10px 24px;
+  }
+
+  .insta-grid {
+    grid-template-columns: 1fr;
+  }
+}

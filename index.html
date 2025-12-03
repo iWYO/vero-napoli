@@ -5,7 +5,16 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Vero Napoli</title>
-  <link rel="stylesheet" href="style.css" />
+
+  <link rel="stylesheet" href="styles/generic.css" />
+  <link rel="stylesheet" href="styles/header.css" />
+  <link rel="stylesheet" href="styles/hero.css" />
+  <link rel="stylesheet" href="styles/menu.css" />
+  <link rel="stylesheet" href="styles/insta-section.css" />
+  <link rel="stylesheet" href="styles/team.css" />
+  <link rel="stylesheet" href="styles/events.css" />
+  <link rel="stylesheet" href="styles/footer.css" />
+  
 </head>
 
 <body>
@@ -18,9 +27,9 @@
       <div class="logo">VERO NAPOLI</div>
       <ul class="nav-links">
         <li><a href="#menu">Menü</a></li>
+        <li><a href="#social">Insta</a></li>
         <li><a href="#csapat">Csapat</a></li>
         <li><a href="#esemenyek">Események</a></li>
-        <li><a href="#kapcsolat">Kapcsolat</a></li>
       </ul>
       <a href="#" class="btn-primary">Asztalfoglalás</a>
     </nav>
@@ -28,16 +37,16 @@
     <h1 class="hero-title">
       Nápolyiak készítették.<br />Mindenki kedvence.
     </h1>
-    <img src="images/basil-leaf.png" class="floating-leaf leaf-1" />
-    <img src="images/leaf2.png" class="floating-leaf leaf-2" />
+    <img src="images/hero/basil-leaf.png" class="floating-leaf leaf-1" />
+    <img src="images/hero/basil-leaf2.png" class="floating-leaf leaf-2" />
     </div>
 
     <div class="pizza-placeholder">
-      <img src="hero-pizza.png" />
+      <img src="images/hero/hero-pizza.png" />
     </div>
   </header>
 
-  <section class="menu-section">
+  <section class="menu-section" id="menu">
     <div class="container">
       <h2 class="menu-title">Menü</h2>
       <p class="menu-description">
@@ -122,8 +131,7 @@
     </div>
   </section>
 
- <section class="insta-section">
-    <div class="glow-decoration"></div>
+ <section class="insta-section" id="social">
 
     <div class="insta-container">
         
@@ -141,23 +149,23 @@
 
         <div class="insta-grid">
             <div class="insta-img-wrapper">
-                <img src="images/social/1.png" alt="Séf főzés közben" />
+                <img src="images/social/chef-cooking.png" alt="Séf főzés közben" />
             </div>
             <div class="insta-img-wrapper">
-                <img src="images/social/2.png" alt="Pizza tálalva" />
+                <img src="images/social/pizza-onplate.png" alt="Pizza tálalva" />
             </div>
             <div class="insta-img-wrapper">
-                <img src="images/social/3.png" alt="Konyhai hangulat" />
+                <img src="images/social/kitchen-mood.png" alt="Konyhai hangulat" />
             </div>
             <div class="insta-img-wrapper">
-                <img src="images/social/4.png" alt="Séf tálal" />
+                <img src="images/social/chef-dish.png" alt="Séf tálal" />
             </div>
         </div>
 
     </div>
   </section>
 
-  <section class="team-section">
+  <section class="team-section" id="csapat">
     <div class="bottom-glow"></div>
     <div class="noise-overlay"></div>
 
@@ -173,7 +181,7 @@
       <div class="team-grid">
         <div class="team-member">
           <div class="image-wrapper">
-            <img src="images/team/1.png" alt="Giovanni Esposito" />
+            <img src="images/team/giovanni-esposito.png" alt="Giovanni Esposito" />
           </div>
           <h3 class="member-name">Giovanni Esposito</h3>
           <div class="member-role">Alapító & Fő pizzaszakács</div>
@@ -184,7 +192,7 @@
 
         <div class="team-member">
           <div class="image-wrapper">
-            <img src="images/team/2.png" alt="Alessandro Moretti" />
+            <img src="images/team/alessandro-moretti.png" alt="Alessandro Moretti" />
           </div>
           <h3 class="member-name">Alessandro Moretti</h3>
           <div class="member-role">Konyhafőnök</div>
@@ -195,7 +203,7 @@
 
         <div class="team-member">
           <div class="image-wrapper">
-            <img src="images/team/3.png" alt="Marco Rossi" />
+            <img src="images/team/marco-rossi.png" alt="Marco Rossi" />
           </div>
           <h3 class="member-name">Marco Rossi</h3>
           <div class="member-role">Kemencemester</div>
@@ -206,7 +214,7 @@
 
         <div class="team-member">
           <div class="image-wrapper">
-            <img src="images/team/4.png" alt="Antonio Caruso" />
+            <img src="images/team/antonio-caruso.png" alt="Antonio Caruso" />
           </div>
           <h3 class="member-name">Antonio Caruso</h3>
           <div class="member-role">Üzletvezető</div>
@@ -218,32 +226,85 @@
     </div>
   </section>
 
-  <section class="events-section">
+  <section class="events-section" id="esemenyek">
       <div class="events-container">
         <h2 class="events-title">Események</h2>
 
         <div class="events-grid">
           <div class="event-card overlay-active">
-            <img src="images/events/1.png" alt="Céges rendezvény tömeg" />
+            <img src="images/events/outside-company.png" alt="Céges rendezvény tömeg" />
             <div class="card-text">
               <h3>Céges Események</h3>
             </div>
           </div>
 
           <div class="event-card">
-            <img src="images/events/2.png" alt="Elegáns teríték" />
+            <img src="images/events/inside-glasses.png" alt="Elegáns teríték" />
           </div>
 
           <div class="event-card">
-            <img src="images/events/3.png" alt="Előadás" />
+            <img src="images/events/outside-speech.png" alt="Előadás" />
           </div>
 
           <div class="event-card">
-            <img src="images/events/4.png" alt="Koccintás" />
+            <img src="images/events/inside-cheers.png" alt="Koccintás" />
           </div>
         </div>
       </div>
     </section>
+
+
+     <footer class="site-footer">
+      <div class="footer-container">
+        <nav class="footer-nav">
+          <a href="#" class="footer-link">Menü</a>
+          <a href="#" class="footer-link">Csapatunk</a>
+          <a href="#" class="footer-link">Események</a>
+        </nav>
+
+        <div class="footer-brand-section">
+          <div class="footer-logo">VERO NAPOLI</div>
+
+          <div class="social-icons">
+            <svg class="social-icon" viewBox="0 0 24 24">
+              <path
+                d="M12 2.04C6.5 2.04 2 6.53 2 12.06C2 17.06 5.66 21.21 10.44 21.96V14.96H7.9V12.06H10.44V9.85C10.44 7.34 11.93 5.96 14.15 5.96C15.21 5.96 16.12 6.04 16.12 6.04V8.51H15.01C13.77 8.51 13.38 9.28 13.38 10.07V12.06H16.15L15.71 14.96H13.38V21.96C18.16 21.21 21.82 17.06 21.82 12.06C21.82 6.53 17.32 2.04 12 2.04Z"
+              />
+            </svg>
+
+            <svg class="social-icon" viewBox="0 0 24 24">
+              <path
+                d="M7.8,2H16.2C19.4,2 22,4.6 22,7.8V16.2A5.8,5.8 0 0,1 16.2,22H7.8C4.6,22 2,19.4 2,16.2V7.8A5.8,5.8 0 0,1 7.8,2M7.6,4A3.6,3.6 0 0,0 4,7.6V16.4C4,18.39 5.61,20 7.6,20H16.4A3.6,3.6 0 0,0 20,16.4V7.6C20,5.61 18.39,4 16.4,4H7.6M17.25,5.5A1.25,1.25 0 0,1 18.5,6.75A1.25,1.25 0 0,1 17.25,8A1.25,1.25 0 0,1 16,6.75A1.25,1.25 0 0,1 17.25,5.5M12,7A5,5 0 0,1 17,12A5,5 0 0,1 12,17A5,5 0 0,1 7,12A5,5 0 0,1 12,7M12,9A3,3 0 0,0 9,12A3,3 0 0,0 12,15A3,3 0 0,0 15,12A3,3 0 0,0 12,9Z"
+              />
+            </svg>
+
+            <svg class="social-icon" viewBox="0 0 24 24">
+              <path
+                d="M22.46,6C21.69,6.35 20.86,6.58 20,6.69C20.88,6.16 21.56,5.32 21.88,4.31C21.05,4.81 20.13,5.16 19.16,5.36C18.37,4.5 17.26,4 16,4C13.65,4 11.73,5.92 11.73,8.29C11.73,8.63 11.77,8.96 11.84,9.27C8.28,9.09 5.11,7.38 3,4.79C2.63,5.42 2.42,6.16 2.42,6.94C2.42,8.43 3.17,9.75 4.33,10.5C3.62,10.5 2.96,10.3 2.38,10C2.38,10 2.38,10.03 2.38,10.05C2.38,12.11 3.86,13.85 5.82,14.24C5.46,14.34 5.08,14.39 4.69,14.39C4.42,14.39 4.15,14.36 3.89,14.31C4.43,16 6,17.26 7.89,17.29C6.43,18.45 4.58,19.13 2.56,19.13C2.22,19.13 1.88,19.11 1.54,19.07C3.44,20.29 5.7,21 8.12,21C16,21 20.33,14.46 20.33,8.79C20.33,8.6 20.33,8.42 20.32,8.23C21.16,7.63 21.88,6.87 22.46,6Z"
+              />
+            </svg>
+
+            <svg class="social-icon" viewBox="0 0 24 24">
+              <path
+                d="M10,15L15.19,12L10,9V15M21.56,7.17C21.69,7.64 21.78,8.27 21.84,9.07C21.91,9.87 21.94,10.66 21.94,11.44C21.94,12.22 21.91,13.01 21.84,13.81C21.78,14.61 21.69,15.24 21.56,15.71C21.28,16.79 20.44,17.63 19.36,17.91C18.66,18.1 17.33,18.25 15.38,18.36C13.43,18.47 12,18.5 11.06,18.5C10.13,18.5 8.7,18.47 6.75,18.36C4.8,18.25 3.46,18.1 2.77,17.91C1.69,17.63 0.85,16.79 0.56,15.71C0.44,15.24 0.34,14.61 0.28,13.81C0.22,13.01 0.19,12.22 0.19,11.44C0.19,10.66 0.22,9.87 0.28,9.07C0.34,8.27 0.44,7.64 0.56,7.17C0.85,6.09 1.69,5.25 2.77,4.97C3.46,4.78 4.8,4.63 6.75,4.5C8.7,4.4 10.13,4.35 11.06,4.35C12,4.35 13.43,4.4 15.38,4.5C17.33,4.63 18.66,4.78 19.36,4.97C20.44,5.25 21.28,6.09 21.56,7.17Z"
+              />
+            </svg>
+          </div>
+        </div>
+
+        <div class="footer-newsletter">
+          <p class="newsletter-text">Iratkozz fel a hírlevelünkre!</p>
+          <form class="newsletter-form">
+            <input
+              type="email"
+              placeholder="Email"
+              class="newsletter-input"
+              required
+            />
+          </form>
+        </div>
+      </div>
+    </footer>
 
 </body>
 

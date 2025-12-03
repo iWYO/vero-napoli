@@ -1,0 +1,31 @@
+@import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
+@import url("https://api.fontshare.com/v2/css?f[]=clash-display@200,300,400,500,600,700&display=swap");
+
+:root {
+  --bg-color: #fdf8f0;
+  --bg-color-alt: #f0e9dd;
+  --text-dark: #000000;
+  --text-light: #5a4e4f;
+  --accent-color: #e05d3d;
+  --card-bg: #fff;
+  --font-heading: "Clash Display", serif;
+  --font-body: "Roboto", sans-serif;
+  --font-logo: "Righteous", sans-serif;
+  --color-hot: #ff3b30;
+  --color-panel-dark: #2c1a16;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--bg-color);
+  color: var(--text-dark);
+  line-height: 1.6;
+  margin: 0;
+  overflow-x: hidden;
+}
